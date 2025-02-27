@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Поле для логина -->
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите логин"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Поле для пароля -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Кнопка для входа -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        android:padding="12dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+    android:id="@+id/buttonRegister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Зарегистрироваться"
+    android:padding="12dp"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="16dp"/>
+
+
+
+</LinearLayout>
