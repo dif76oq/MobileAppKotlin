@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
             finish()
         } else {
             Log.d("FirebaseAuth", "onCreate: Пользователь найден: ${user.email}")
-            setContentView(R.layout.activity_main)
+            startActivity(Intent(this, CarListActivity::class.java))
+            finish()
         }
     }
 

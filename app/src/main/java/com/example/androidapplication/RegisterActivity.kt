@@ -28,13 +28,11 @@ class RegisterActivity : AppCompatActivity() {
         val editTextPassword = findViewById<EditText>(R.id.editTextPassword)
         val editTextConfirmedPassword = findViewById<EditText>(R.id.editTextConfirmPassword)
 
-        // Переход на экран входа
         buttonLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
 
-        // Обработчик регистрации
         buttonRegister.setOnClickListener {
             val username = editTextUsername.text.toString().trim()
             val email = editTextEmail.text.toString().trim()
@@ -99,7 +97,7 @@ class RegisterActivity : AppCompatActivity() {
             .set(userMap)
             .addOnSuccessListener {
                 showToast("Регистрация успешна!")
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, CarListActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e ->

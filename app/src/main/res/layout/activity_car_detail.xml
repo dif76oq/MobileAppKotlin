@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D2FAD2"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="32dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/carImageDetail"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="40dp"
+            android:layout_height="170dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/carImageDetail"
+            android:layout_marginEnd="5dp"
+            android:background="#AAF6AA"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="Previous Image" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="40dp"
+            android:layout_height="170dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/carImageDetail"
+            android:layout_marginStart="5dp"
+            android:background="#AAF6AA"
+            android:src="@drawable/arrow_right"
+            android:contentDescription="Next Image" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/carDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:id="@+id/btnAddToFavorite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heart_outline"
+            android:contentDescription="Add to favorite" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/modelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/brandText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/yearText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/bodyTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Type: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/engineText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engine: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/horsepowerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horsepower: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/fuelTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fuel Type: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/transmissionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transmission: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/seatsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seats: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/driveTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drive Type: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

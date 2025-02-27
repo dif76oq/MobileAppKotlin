@@ -6,7 +6,7 @@
     android:padding="16dp"
     android:gravity="center">
 
-    <!-- Поле для логина -->
+
     <EditText
         android:id="@+id/editTextLogin"
         android:layout_width="match_parent"
@@ -16,7 +16,6 @@
         android:padding="12dp"
         android:layout_marginBottom="16dp" />
 
-    <!-- Поле для пароля -->
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
@@ -26,7 +25,6 @@
         android:padding="12dp"
         android:layout_marginBottom="32dp" />
 
-    <!-- Кнопка для входа -->
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
