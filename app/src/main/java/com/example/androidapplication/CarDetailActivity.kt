@@ -54,6 +54,7 @@ class CarDetailActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.seatsText).text = "Seats: ${it.seats}"
             findViewById<TextView>(R.id.weightText).text = "Weight: ${it.weight} kg"
             findViewById<TextView>(R.id.driveTypeText).text = "Drive Type: ${it.driveType}"
+            findViewById<TextView>(R.id.descriptionText).text = "Description: ${it.description}"
 
             checkIfFavorite()
 

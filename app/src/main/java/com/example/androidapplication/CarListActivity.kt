@@ -2,14 +2,19 @@ package com.example.androidapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.google.firebase.auth.FirebaseAuth
 
 class CarListActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var carAdapter: CarAdapter
+    private lateinit var btnLogout: Button
     private val carRepository = CarRepository()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,5 +32,13 @@ class CarListActivity : AppCompatActivity() {
             }
             recyclerView.adapter = carAdapter
         }
+        btnLogout = findViewById<Button>(R.id.btnLogout)
+        btnLogout.setOnClickListener{logout()}
+    }
+
+    private fun logout() {
+        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 }

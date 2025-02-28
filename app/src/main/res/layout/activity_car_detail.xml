@@ -80,61 +80,86 @@
         android:orientation="vertical"
         android:paddingTop="5dp">
 
-        <TextView
-            android:id="@+id/modelText"
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Model: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            android:columnCount="2"
+            android:paddingTop="5dp">
 
-        <TextView
-            android:id="@+id/brandText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Brand: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/brandText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Brand: "
+                android:textSize="20sp"
+                android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/priceText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Price: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/modelText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Model: "
+                android:textSize="20sp"
+                android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/yearText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Year: "
-            android:textSize="20sp"
-            android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/bodyTypeText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Body Type: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Price: "
+                android:textSize="20sp"
+                android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/engineText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Engine: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Year: "
+                android:textSize="20sp"
+                android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/horsepowerText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Horsepower: "
-            android:textSize="20sp"
-            android:padding="5dp" />
+            <TextView
+                android:id="@+id/bodyTypeText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Body Type: "
+                android:textSize="20sp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/engineText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Engine: "
+                android:textSize="20sp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/seatsText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Seats: "
+                android:textSize="20sp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/horsepowerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Horsepower: "
+                android:textSize="20sp"
+                android:padding="5dp" />
+        </GridLayout>
+
 
         <TextView
             android:id="@+id/fuelTypeText"
@@ -152,13 +177,6 @@
             android:textSize="20sp"
             android:padding="5dp" />
 
-        <TextView
-            android:id="@+id/seatsText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Seats: "
-            android:textSize="20sp"
-            android:padding="5dp" />
 
         <TextView
             android:id="@+id/weightText"
@@ -173,6 +191,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Drive Type: "
+            android:textSize="20sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: "
             android:textSize="20sp"
             android:padding="5dp" />
     </LinearLayout>
